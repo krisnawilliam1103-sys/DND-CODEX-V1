@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#11100f"><meta name="description" content="D&D Codex — katalog referensi Dungeons & Dragons SRD 5.2.1.">
+  <title>D&D Codex — The Grimoire</title><link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="D&D Codex beranda"><span class="brand-mark">✦</span><span><strong>D&D CODEX</strong><small>THE GRIMOIRE · SRD 5.2.1</small></span></a>
+    <div class="top-actions"><span class="version-tag">2024 EDITION</span><button class="icon-button" id="favorites-toggle" title="Tampilkan favorit" aria-label="Favorit">♡ <span id="fav-count">0</span></button></div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-ornament">✧ ━━━━━━━━━ ✧</div>
+      <p class="eyebrow">A FIELD GUIDE FOR ADVENTURERS</p>
+      <h1>Knowledge is<br><em>your greatest weapon.</em></h1>
+      <p class="hero-copy">Satu tempat untuk menjelajahi dunia Dungeons & Dragons.<br>Temukan mantra, makhluk, perlengkapan, dan aturan petualanganmu.</p>
+      <div class="search-wrap"><span class="search-symbol">⌕</span><input id="search" type="search" placeholder="Cari nama, kemampuan, spell, monster…" autocomplete="off"><kbd>/</kbd><button id="clear-search" class="clear-search" aria-label="Hapus pencarian">×</button></div>
+      <div class="search-hint"><span class="live-dot"></span> Pencarian lokal · Nama dan isi entri</div>
+    </section>
+    <section class="stats-row" aria-label="Ringkasan katalog"><div><strong id="total-entries">—</strong><span>ENTRI TERINDEKS</span></div><div><strong id="total-categories">13</strong><span>KATEGORI</span></div><div><strong>5.2.1</strong><span>SRD EDITION</span></div></section>
+    <section class="workspace">
+      <aside class="sidebar"><div class="section-label">LIBRARY <span>✦</span></div><nav id="category-list" class="category-list" aria-label="Kategori katalog"></nav><div class="sidebar-note"><span>☽</span><p>“Not all those who wander<br>are lost.”</p><small>— A TRAVELER'S WISDOM</small></div></aside>
+      <section class="catalog"><div class="catalog-heading"><div><p class="eyebrow" id="section-eyebrow">THE ARCHIVES</p><h2 id="section-title">Jelajahi Codex</h2><p id="result-summary" class="muted">Memuat katalog…</p></div><label class="sort-wrap"><span>URUTKAN</span><select id="sort"><option value="az">Nama A–Z</option><option value="za">Nama Z–A</option></select></label></div>
+        <div id="active-filters" class="active-filters"></div><div id="results" class="results-grid" aria-live="polite"><div class="loading">Membuka arsip kuno…</div></div><div id="empty-state" class="empty-state" hidden><span>☽</span><h3>Belum ditemukan</h3><p>Coba kata kunci lain atau pilih kategori berbeda.</p><button id="reset-search" class="secondary-button">Reset pencarian</button></div>
+        <div class="load-more-wrap"><button id="load-more" class="secondary-button" hidden>Muat lebih banyak <span>↓</span></button></div>
+      </section>
+    </section>
+    <footer><div class="footer-brand">✦ D&D CODEX</div><p>Prototype komunitas · Antarmuka Bahasa Indonesia · Konten sumber berbahasa Inggris</p><p class="footer-small">Dungeons & Dragons SRD 5.2.1 · CC BY 4.0 · Lihat SOURCES.md untuk atribusi dan lisensi.</p></footer>
+  </main>
+  <div class="detail-backdrop" id="detail-backdrop" hidden></div><aside class="detail-panel" id="detail-panel" aria-label="Detail entri" aria-hidden="true"><button id="detail-close" class="detail-close" aria-label="Tutup detail">×</button><div id="detail-content"></div></aside>
+  <script src="assets/app.js"></script>
+</body></html>
